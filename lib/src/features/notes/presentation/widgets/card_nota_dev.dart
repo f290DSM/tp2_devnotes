@@ -37,11 +37,18 @@ class CardNotaDev extends StatelessWidget {
             margin: const EdgeInsets.fromLTRB(0, 0, 16, 16),
             child: Chip(
               shape: RoundedRectangleBorder(
+                side: BorderSide(
+                  color: Colors.primaries[nota.categoria!.id!],
+                ),
                 borderRadius: BorderRadius.circular(32),
               ),
-              backgroundColor: Colors.primaries[nota.categoria!.id!].shade100,
+              backgroundColor: Colors.primaries[nota.categoria!.id!].shade700
+                  .withOpacity(0.2),
               label: Text(
                 nota.categoria!.descricao!,
+                style: TextStyle(
+                  color: Colors.primaries[nota.categoria!.id!],
+                ),
               ),
             ),
           )

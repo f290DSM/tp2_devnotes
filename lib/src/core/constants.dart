@@ -1,5 +1,14 @@
-import '../features/notes/domain/entity/categoria.dart';
+import '../features/categorias/domain/entity/categoria.dart';
 import '../features/notes/domain/entity/note.dart';
+
+final kCategorias = [
+  Categoria(id: 1, descricao: 'Python'),
+  Categoria(id: 2, descricao: 'Java'),
+  Categoria(id: 3, descricao: 'Dart'),
+  Categoria(id: 4, descricao: 'PHP'),
+  Categoria(id: 5, descricao: 'Kotlin'),
+  Categoria(id: 6, descricao: 'C#'),
+];
 
 final kNotas = [
   Nota(

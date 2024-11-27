@@ -27,4 +27,9 @@ class Categoria {
 
   factory Categoria.fromJson(String source) =>
       Categoria.fromMap(json.decode(source));
+
+  @override
+  String toString() {
+    return 'Categoria{id: $id, descricao: $descricao}';
+  }
 }

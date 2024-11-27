@@ -12,14 +12,15 @@ class LoadingWidget extends StatelessWidget {
       child: SizedBox(
         width: size,
         height: size,
-        child: LoadingIndicator(
+        child: const LoadingIndicator(
           indicatorType: Indicator.ballRotateChase,
-          colors: [
-            Colors.blue.shade500.withOpacity(0.75),
-            Colors.blue.shade300.withOpacity(0.75),
-            Colors.blue.shade200.withOpacity(0.75),
-            Colors.blue.shade100.withOpacity(0.75),
-          ],
+          // colors: [
+          //   Theme.of(context).colorScheme.primary.withOpacity(0.75),
+          //   Colors.blue.shade500.withOpacity(0.75),
+          //   Colors.blue.shade300.withOpacity(0.75),
+          //   Colors.blue.shade200.withOpacity(0.75),
+          //   Colors.blue.shade100.withOpacity(0.75),
+          // ],
         ),
       ),
     );

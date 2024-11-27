@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'categoria.dart';
+import '../../../categorias/domain/entity/categoria.dart';
 
 class Nota {
   int? id;
@@ -33,4 +33,9 @@ class Nota {
   String toJson() => json.encode(toMap());
 
   factory Nota.fromJson(String source) => Nota.fromMap(json.decode(source));
+
+  @override
+  String toString() {
+    return 'Nota{id: $id, conteudo: $conteudo, categoria: $categoria}';
+  }
 }
